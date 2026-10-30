@@ -1,0 +1,61 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw and processed datasets
+data/raw/
+data/processed/
+
+# Sample/generated data
+data/samples/
+
+# Runtime alert log
+reports/alerts.csv
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Development and exploratory analysis files
+src/analyze_deauth_behavior.py
+src/analyze_window_behavior.py
+src/analyze_window_model.py
+src/evaluate_attack_types.py
+src/feature_importance.py
+src/inspect_dataset.py
+src/profile_features.py
+src/profile_features_full.py
+src/profile_files.py
+src/profile_labels.py
+src/train_baseline.py
+src/validate_training_data.py
+
+# Development-only model
+models/hist_gradient_boosting_baseline.joblib
+
+# Development-only reports
+reports/attack_type_evaluation.txt
+reports/baseline_validation_metrics.txt
+reports/deauth_temporal_analysis.csv
+reports/feature_importance.csv
+reports/feature_importance.png
+reports/feature_profile.csv
+reports/feature_profile_full.csv
+reports/file_label_profile.csv
+
+# Python cache directories
+**/__pycache__/

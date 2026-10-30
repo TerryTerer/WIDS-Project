@@ -1,0 +1,62 @@
+WIDS WINDOW MODEL FEATURE ANALYSIS
+======================================================================
+
+Model: HistGradientBoostingClassifier
+Validation windows: 1,623
+Features: 46
+Baseline accuracy: 0.8792
+
+CONFUSION MATRIX
+[[815 119]
+ [ 77 612]]
+
+TOP 25 FEATURES
+----------------------------------------------------------------------
+                    feature  importance_mean  importance_std
+              frame.len_min         0.110167        0.004852
+ radiotap.dbm_antsignal_std         0.019640        0.001844
+               deauth_ratio         0.016260        0.003245
+             protected_rate         0.015905        0.003146
+ deauth_frames_per_sec_5sec         0.013027        0.003158
+ radiotap.dbm_antsignal_min         0.011827        0.005611
+          deauth_ratio_5sec         0.011742        0.001453
+             frames_per_sec         0.010334        0.004643
+         wlan.duration_mean         0.010012        0.001309
+             frame.len_mean         0.009119        0.005135
+    wlan_radio.duration_min         0.008122        0.002232
+          wlan.duration_max         0.006596        0.003178
+  wlan_radio.data_rate_mean         0.005238        0.002933
+     radiotap.datarate_mean         0.005118        0.003510
+ radiotap.dbm_antsignal_max         0.005108        0.002077
+      unique_frame_subtypes         0.005072        0.001386
+      radiotap.datarate_std         0.004264        0.001881
+            retry_rate_5sec         0.003448        0.001478
+       frame.time_delta_min         0.003414        0.002411
+      deauth_frames_per_sec         0.003292        0.000824
+radiotap.dbm_antsignal_mean         0.003006        0.003408
+        protected_rate_5sec         0.002933        0.002583
+ power_management_rate_5sec         0.002162        0.001829
+      frame.time_delta_mean         0.002023        0.002751
+   wlan_radio.data_rate_std         0.001920        0.002433
+
+BEHAVIORAL FEATURES
+----------------------------------------------------------------------
+                   feature  importance_mean  importance_std
+              deauth_ratio         0.016260        0.003245
+            protected_rate         0.015905        0.003146
+deauth_frames_per_sec_5sec         0.013027        0.003158
+         deauth_ratio_5sec         0.011742        0.001453
+            frames_per_sec         0.010334        0.004643
+     unique_frame_subtypes         0.005072        0.001386
+           retry_rate_5sec         0.003448        0.001478
+     deauth_frames_per_sec         0.003292        0.000824
+       protected_rate_5sec         0.002933        0.002583
+power_management_rate_5sec         0.002162        0.001829
+                retry_rate         0.000490        0.001799
+        unique_frame_types         0.000407        0.000310
+             fragment_rate         0.000000        0.000000
+     power_management_rate        -0.000266        0.000531
+       frames_per_sec_5sec        -0.000397        0.001178
+   unique_frame_types_5sec        -0.000429        0.002538
+        fragment_rate_5sec        -0.001088        0.000392
+unique_frame_subtypes_5sec        -0.001735        0.002124

@@ -1,0 +1,86 @@
+WIDS WINDOW-LEVEL ATTACK-TYPE EVALUATION
+======================================================================
+
+Dataset: validation_window_features.csv
+Test set was not used.
+
+OVERALL VALIDATION PERFORMANCE
+----------------------------------------------------------------------
+Accuracy : 0.8792
+Precision: 0.8372
+Recall   : 0.8882
+F1-score : 0.8620
+
+Confusion matrix:
+[[815 119]
+ [ 77 612]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+      Normal       0.91      0.87      0.89       934
+      Attack       0.84      0.89      0.86       689
+
+    accuracy                           0.88      1623
+   macro avg       0.88      0.88      0.88      1623
+weighted avg       0.88      0.88      0.88      1623
+
+
+PER-ATTACK-TYPE DETECTION
+----------------------------------------------------------------------
+
+BeaconFlood
+Total windows : 46
+Detected      : 45
+Missed        : 1
+Detection rate: 97.83%
+
+Deauth
+Total windows : 90
+Detected      : 72
+Missed        : 18
+Detection rate: 80.00%
+
+Downgrade
+Total windows : 133
+Detected      : 94
+Missed        : 39
+Detection rate: 70.68%
+
+DragonRain
+Total windows : 144
+Detected      : 144
+Missed        : 0
+Detection rate: 100.00%
+
+DragonTime
+Total windows : 101
+Detected      : 93
+Missed        : 8
+Detection rate: 92.08%
+
+SAECommitValue
+Total windows : 89
+Detected      : 84
+Missed        : 5
+Detection rate: 94.38%
+
+UnspportGroup
+Total windows : 86
+Detected      : 80
+Missed        : 6
+Detection rate: 93.02%
+
+NORMAL TRAFFIC
+----------------------------------------------------------------------
+Normal windows       : 934
+Correctly classified : 815
+False positives      : 119
+False-positive rate  : 12.74%
+
+DEAUTHENTICATION DETECTION
+----------------------------------------------------------------------
+Deauth windows : 90
+Detected       : 72
+Missed         : 18
+Detection rate : 80.00%

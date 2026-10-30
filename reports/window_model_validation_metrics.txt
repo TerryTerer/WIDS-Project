@@ -1,0 +1,75 @@
+WIDS WINDOW-LEVEL MODEL VALIDATION
+============================================================
+
+Training windows: 6,794
+Validation windows: 1,623
+Number of features: 46
+
+Features:
+- frames_per_sec
+- frame.len_mean
+- frame.len_std
+- frame.len_min
+- frame.len_max
+- frame.time_delta_mean
+- frame.time_delta_std
+- frame.time_delta_min
+- frame.time_delta_max
+- wlan.duration_mean
+- wlan.duration_std
+- wlan.duration_min
+- wlan.duration_max
+- wlan_radio.data_rate_mean
+- wlan_radio.data_rate_std
+- wlan_radio.data_rate_min
+- wlan_radio.data_rate_max
+- wlan_radio.duration_mean
+- wlan_radio.duration_std
+- wlan_radio.duration_min
+- wlan_radio.duration_max
+- radiotap.dbm_antsignal_mean
+- radiotap.dbm_antsignal_std
+- radiotap.dbm_antsignal_min
+- radiotap.dbm_antsignal_max
+- radiotap.datarate_mean
+- radiotap.datarate_std
+- radiotap.datarate_min
+- radiotap.datarate_max
+- retry_rate
+- protected_rate
+- power_management_rate
+- fragment_rate
+- unique_frame_types
+- unique_frame_subtypes
+- deauth_frames_per_sec
+- deauth_ratio
+- frames_per_sec_5sec
+- deauth_frames_per_sec_5sec
+- deauth_ratio_5sec
+- retry_rate_5sec
+- protected_rate_5sec
+- power_management_rate_5sec
+- fragment_rate_5sec
+- unique_frame_types_5sec
+- unique_frame_subtypes_5sec
+
+Metrics
+------------------------------------------------------------
+Accuracy : 0.8792
+Precision: 0.8372
+Recall   : 0.8882
+F1-score : 0.8620
+
+Confusion Matrix
+[[815 119]
+ [ 77 612]]
+
+Classification Report
+              precision    recall  f1-score   support
+
+      Normal       0.91      0.87      0.89       934
+      Attack       0.84      0.89      0.86       689
+
+    accuracy                           0.88      1623
+   macro avg       0.88      0.88      0.88      1623
+weighted avg       0.88      0.88      0.88      1623
